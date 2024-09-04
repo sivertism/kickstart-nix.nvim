@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
+    #nvim-lspconfig.url = "github:neovim/nvim-lspconfig";
 
     # Add bleeding-edge plugins here.
     # They can be updated with `nix flake update` (make sure to commit the generated flake.lock)
@@ -12,6 +13,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    nvim-lspconfig ={ 
+    	url = "github:neovim/nvim-lspconfig";
+	flake = false;
+    };
   };
 
   outputs = inputs @ {
