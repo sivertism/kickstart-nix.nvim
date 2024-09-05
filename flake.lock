@@ -73,6 +73,22 @@
         "type": "github"
       }
     },
+    "neo-tree": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718074188,
+        "narHash": "sha256-eNGuQEjAKsPuRDGaw95kCVOmP64ZDnUuFBppqtcrhZ4=",
+        "owner": "nvim-neo-tree",
+        "repo": "neo-tree.nvim",
+        "rev": "206241e451c12f78969ff5ae53af45616ffc9b72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-neo-tree",
+        "repo": "neo-tree.nvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1718714799,
@@ -155,6 +171,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
+        "neo-tree": "neo-tree",
         "nixpkgs": "nixpkgs_2",
         "nvim-lspconfig": "nvim-lspconfig"
       }

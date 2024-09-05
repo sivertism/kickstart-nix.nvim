@@ -14,8 +14,13 @@
     #   flake = false;
     # };
     nvim-lspconfig ={ 
-    	url = "github:neovim/nvim-lspconfig";
-	flake = false;
+      url = "github:neovim/nvim-lspconfig";
+      flake = false;
+    };
+
+    neo-tree = {
+      url = "github:nvim-neo-tree/neo-tree.nvim";
+      flake = false;
     };
   };
 
@@ -51,7 +56,7 @@
       bundlers.x86_64-linux = rec {
           identity = drv: drv;
 
-            neovim  = drv: self.packages.x86_64-linux.neovim;
+            nvim  = drv: self.packages.x86_64-linux.nvim;
 
               default = identity;
       };
