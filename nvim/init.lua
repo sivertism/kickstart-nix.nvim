@@ -42,6 +42,9 @@ opt.splitright = true
 opt.splitbelow = true
 opt.cmdheight = 0
 
+opt.number = true
+opt.relativenumber = true
+
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- Configure Neovim diagnostic messages
