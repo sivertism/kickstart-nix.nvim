@@ -48,6 +48,13 @@
           gen-luarc.overlays.default
         ];
       };
+      bundlers.x86_64-linux = rec {
+          identity = drv: drv;
+
+            neovim  = drv: self.packages.x86_64-linux.neovim;
+
+              default = identity;
+      };
       shell = pkgs.mkShell {
         name = "nvim-devShell";
         buildInputs = with pkgs; [
