@@ -9,6 +9,9 @@ g.maplocalleader = ' '
 
 opt.compatible = false
 
+-- Set shell to just zsh so neovim doesn't use some default path
+g.terminal_emulator='zsh'
+
 -- Enable true colour support
 if fn.has('termguicolors') then
   opt.termguicolors = true
